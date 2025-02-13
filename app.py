@@ -62,92 +62,92 @@ if uploaded_file:
         st.subheader(f"Evaluation for {journal}")
         
         if journal == "Mind":
-            st.write("""
-- **Focus and Scope**: Your manuscript should address topics in analytic philosophy, including metaphysics, epistemology, philosophy of mind, and logic.
-- **Abstract**: Should be ≤ 250 words. Ensure it clearly outlines the problem, methods, and contributions.
-- **Length**: Maximum 10,000 words. Your manuscript is estimated to be **{format_info['pages_estimate']:.1f} pages**.
-            """.format(format_info=format_info))
+            st.write(
+                "- **Focus and Scope**: Your manuscript should address topics in analytic philosophy, including metaphysics, epistemology, philosophy of mind, and logic.\n"
+                "- **Abstract**: Should be ≤ 250 words. Ensure it clearly outlines the problem, methods, and contributions.\n"
+                f"- **Length**: Maximum 10,000 words. Your manuscript is estimated to be **{format_info['pages_estimate']:.1f} pages**."
+            )
             if format_info['pages_estimate'] > 40:  # 10,000 palabras ≈ 40 páginas
                 st.warning("Your manuscript exceeds the recommended length. Consider condensing content.")
         
         elif journal == "The Philosophical Review":
-            st.write("""
-- **Focus and Scope**: Your manuscript should explore fundamental philosophical questions with clarity and rigor.
-- **Abstract**: Should be ≤ 200 words. Ensure it highlights the significance of your research.
-- **Length**: Maximum 12,000 words. Your manuscript is estimated to be **{format_info['pages_estimate']:.1f} pages**.
-            """.format(format_info=format_info))
+            st.write(
+                "- **Focus and Scope**: Your manuscript should explore fundamental philosophical questions with clarity and rigor.\n"
+                "- **Abstract**: Should be ≤ 200 words. Ensure it highlights the significance of your research.\n"
+                f"- **Length**: Maximum 12,000 words. Your manuscript is estimated to be **{format_info['pages_estimate']:.1f} pages**."
+            )
             if format_info['pages_estimate'] > 48:  # 12,000 palabras ≈ 48 páginas
                 st.warning("Your manuscript exceeds the recommended length. Consider revising.")
         
         elif journal == "Journal of Philosophy":
-            st.write("""
-- **Focus and Scope**: Your manuscript should contribute to debates in core areas of philosophy, such as ethics, metaphysics, or epistemology.
-- **Abstract**: Should be ≤ 150 words. Ensure it is concise and captures the essence of your argument.
-- **Length**: Maximum 9,000 words. Your manuscript is estimated to be **{format_info['pages_estimate']:.1f} pages**.
-            """.format(format_info=format_info))
+            st.write(
+                "- **Focus and Scope**: Your manuscript should contribute to debates in core areas of philosophy, such as ethics, metaphysics, or epistemology.\n"
+                "- **Abstract**: Should be ≤ 150 words. Ensure it is concise and captures the essence of your argument.\n"
+                f"- **Length**: Maximum 9,000 words. Your manuscript is estimated to be **{format_info['pages_estimate']:.1f} pages**."
+            )
             if format_info['pages_estimate'] > 36:  # 9,000 palabras ≈ 36 páginas
                 st.warning("Your manuscript exceeds the recommended length. Consider editing for brevity.")
         
         elif journal == "Philosophy and Phenomenological Research":
-            st.write("""
-- **Focus and Scope**: Your manuscript should engage with phenomenology, existentialism, or related areas of analytic philosophy.
-- **Abstract**: Should be ≤ 200 words. Ensure it defines the research problem and its importance.
-- **Length**: Maximum 10,000 words. Your manuscript is estimated to be **{format_info['pages_estimate']:.1f} pages**.
-            """.format(format_info=format_info))
+            st.write(
+                "- **Focus and Scope**: Your manuscript should engage with phenomenology, existentialism, or related areas of analytic philosophy.\n"
+                "- **Abstract**: Should be ≤ 200 words. Ensure it defines the research problem and its importance.\n"
+                f"- **Length**: Maximum 10,000 words. Your manuscript is estimated to be **{format_info['pages_estimate']:.1f} pages**."
+            )
             if format_info['pages_estimate'] > 40:  # 10,000 palabras ≈ 40 páginas
                 st.warning("Your manuscript exceeds the recommended length. Consider revising.")
         
         elif journal == "Nous":
-            st.write("""
-- **Focus and Scope**: Your manuscript should address topics in metaphysics, epistemology, philosophy of language, or philosophy of mind.
-- **Abstract**: Should be ≤ 150 words. Ensure it is clear and highlights the key contributions of your research.
-- **Length**: Maximum 10,000 words. Your manuscript is estimated to be **{format_info['pages_estimate']:.1f} pages**.
-            """.format(format_info=format_info))
+            st.write(
+                "- **Focus and Scope**: Your manuscript should address topics in metaphysics, epistemology, philosophy of language, or philosophy of mind.\n"
+                "- **Abstract**: Should be ≤ 150 words. Ensure it is clear and highlights the key contributions of your research.\n"
+                f"- **Length**: Maximum 10,000 words. Your manuscript is estimated to be **{format_info['pages_estimate']:.1f} pages**."
+            )
             if format_info['pages_estimate'] > 40:  # 10,000 palabras ≈ 40 páginas
                 st.warning("Your manuscript exceeds the recommended length. Consider reducing content.")
         
         elif journal == "Ethics":
-            st.write("""
-- **Focus and Scope**: Your manuscript should explore ethical theory, applied ethics, or moral philosophy.
-- **Abstract**: Should be ≤ 200 words. Ensure it clearly states the research problem and its significance.
-- **Length**: Maximum 10,000 words. Your manuscript is estimated to be **{format_info['pages_estimate']:.1f} pages**.
-            """.format(format_info=format_info))
+            st.write(
+                "- **Focus and Scope**: Your manuscript should explore ethical theory, applied ethics, or moral philosophy.\n"
+                "- **Abstract**: Should be ≤ 200 words. Ensure it clearly states the research problem and its significance.\n"
+                f"- **Length**: Maximum 10,000 words. Your manuscript is estimated to be **{format_info['pages_estimate']:.1f} pages**."
+            )
             if format_info['pages_estimate'] > 40:  # 10,000 palabras ≈ 40 páginas
                 st.warning("Your manuscript exceeds the recommended length. Consider revising.")
         
         elif journal == "Philosophical Studies":
-            st.write("""
-- **Focus and Scope**: Your manuscript should address topics in analytic philosophy, including metaphysics, epistemology, and philosophy of mind.
-- **Abstract**: Should be ≤ 150 words. Ensure it is concise and highlights the key contributions of your research.
-- **Length**: Maximum 9,000 words. Your manuscript is estimated to be **{format_info['pages_estimate']:.1f} pages**.
-            """.format(format_info=format_info))
+            st.write(
+                "- **Focus and Scope**: Your manuscript should address topics in analytic philosophy, including metaphysics, epistemology, and philosophy of mind.\n"
+                "- **Abstract**: Should be ≤ 150 words. Ensure it is concise and highlights the key contributions of your research.\n"
+                f"- **Length**: Maximum 9,000 words. Your manuscript is estimated to be **{format_info['pages_estimate']:.1f} pages**."
+            )
             if format_info['pages_estimate'] > 36:  # 9,000 palabras ≈ 36 páginas
                 st.warning("Your manuscript exceeds the recommended length. Consider editing for brevity.")
         
         elif journal == "Synthese":
-            st.write("""
-- **Focus and Scope**: Your manuscript should explore interdisciplinary topics in philosophy, including philosophy of science, epistemology, and logic.
-- **Abstract**: Should be ≤ 250 words. Ensure it clearly outlines the problem, methods, and contributions.
-- **Length**: Maximum 12,000 words. Your manuscript is estimated to be **{format_info['pages_estimate']:.1f} pages**.
-            """.format(format_info=format_info))
+            st.write(
+                "- **Focus and Scope**: Your manuscript should explore interdisciplinary topics in philosophy, including philosophy of science, epistemology, and logic.\n"
+                "- **Abstract**: Should be ≤ 250 words. Ensure it clearly outlines the problem, methods, and contributions.\n"
+                f"- **Length**: Maximum 12,000 words. Your manuscript is estimated to be **{format_info['pages_estimate']:.1f} pages**."
+            )
             if format_info['pages_estimate'] > 48:  # 12,000 palabras ≈ 48 páginas
                 st.warning("Your manuscript exceeds the recommended length. Consider condensing content.")
         
         elif journal == "The Journal of Ethics":
-            st.write("""
-- **Focus and Scope**: Your manuscript should address ethical theory, normative ethics, or applied ethics.
-- **Abstract**: Should be ≤ 200 words. Ensure it is concise and captures the essence of your argument.
-- **Length**: Maximum 10,000 words. Your manuscript is estimated to be **{format_info['pages_estimate']:.1f} pages**.
-            """.format(format_info=format_info))
+            st.write(
+                "- **Focus and Scope**: Your manuscript should address ethical theory, normative ethics, or applied ethics.\n"
+                "- **Abstract**: Should be ≤ 200 words. Ensure it is concise and captures the essence of your argument.\n"
+                f"- **Length**: Maximum 10,000 words. Your manuscript is estimated to be **{format_info['pages_estimate']:.1f} pages**."
+            )
             if format_info['pages_estimate'] > 40:  # 10,000 palabras ≈ 40 páginas
                 st.warning("Your manuscript exceeds the recommended length. Consider revising.")
         
         elif journal == "Philosophy & Public Affairs":
-            st.write("""
-- **Focus and Scope**: Your manuscript should explore the intersection of philosophy and public policy, including political philosophy and applied ethics.
-- **Abstract**: Should be ≤ 150 words. Ensure it clearly states the research problem and its significance.
-- **Length**: Maximum 10,000 words. Your manuscript is estimated to be **{format_info['pages_estimate']:.1f} pages**.
-            """.format(format_info=format_info))
+            st.write(
+                "- **Focus and Scope**: Your manuscript should explore the intersection of philosophy and public policy, including political philosophy and applied ethics.\n"
+                "- **Abstract**: Should be ≤ 150 words. Ensure it clearly states the research problem and its significance.\n"
+                f"- **Length**: Maximum 10,000 words. Your manuscript is estimated to be **{format_info['pages_estimate']:.1f} pages**."
+            )
             if format_info['pages_estimate'] > 40:  # 10,000 palabras ≈ 40 páginas
                 st.warning("Your manuscript exceeds the recommended length. Consider reducing content.")
         
